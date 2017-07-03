@@ -1,0 +1,17 @@
+@font-face{
+    font-family: 'GillSansNovaBold';
+    font-style:normal;
+    src: url(../fonts/GillSansNovaBold.otf);
+}
+
+@font-face{
+    font-family: 'GillSansNovaBook';
+    font-style:normal;
+    src:url(../fonts/GillSansNovaBook.otf);
+}
+
+@font-face{
+    font-family: 'GillSansNovaSemiBold';
+    font-style:normal;
+    src:url(../fonts/GillSansNovaSemiBold.otf);
+}
