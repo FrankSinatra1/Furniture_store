@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../app/css/header.min.css">
     <link rel="stylesheet" href="../app/css/main.min.css">
     <link rel="stylesheet" href="../app/libs/animate/animate.css">
+    <link rel="stylesheet" href="../app/libs/Magnific-Popup/magnific-popup.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
        <section class="wrapper_sectionOne">
         <div class="wrap_sectionOne">
             <div class="logo">
-                <a href="#"><img src="img/logo_bg.png" alt=""></a>
+                <a href="#"><img src="img/logo_bg.png" alt="" class="logoImages"></a>
                 <p>Производство и продажа трансформируемой <br>мебели по Москве и МО</p>
             </div>
             <div class="header_menu">
@@ -66,7 +67,7 @@
         </div>
         <div class="wrap_borderRadius">
             <div class="itemOneBorder">
-                <a href="#">
+                <a class="popup-youtube" href="https://www.youtube.com/watch?v=MejbOFk7H6c">
                    <span></span>
                     Узнайте что такое <br> мебель - трансформеры <br> <strong>за 2 минуты</strong>
                 </a>
@@ -147,14 +148,16 @@
             <span class="wow slideInDown" data-wow-duration=".9s"><p class="span_p">Преимущества</p></span>
         </span>
         <span class="vertical verticaleTwo">
-        
+            <span class="wow slideInDown" data-wow-duration=".9s"><p class="span_p">Проекты</p></span>
         </span>
         <span class="vertical verticaleThree">
+            <span class="wow slideInDown" data-wow-duration=".9s"><p class="span_p">гарантия</p></span>
         </span>
         <span class="vertical verticaleFour">
             <span class="wow slideInDown" data-wow-duration=".9s" data-wow-delay=".1s"><p class="span_p">Каталог</p></span>
         </span>
         <span class="vertical verticaleFive">
+            <span class="wow slideInDown" data-wow-duration=".9s" data-wow-delay=".1s"><p class="span_p">Смотреть видео</p></span>
         </span>
         
         <section class="wrapper_SectionTwo">
@@ -178,12 +181,12 @@
         </section>
         
         <section class="wrapper_SectionThree">
-            <div class="wrap_sectionThree wow fadeInLeft" data-wow-duration=".9s">
+            <div class="wrap_sectionThree wow fadeInUp" data-wow-duration=".9s">
                 <p>Трансформер - <br> полноценная кровать, <br> а не врменная замена</p>
                 <a href="#"><img src="../app/img/arrow_down_bg.png" alt="">Скачайте каталог шкафов - кроватей</a>
             </div>
             
-            <div class="wrap_sectionThree_image wow fadeInUp" data-wow-duration=".9s">
+            <div class="wrap_sectionThree_image wow fadeInUp" data-wow-duration="1.2s">
                 <div class="wrap_infoHover">
                     <img src="../app/img/plus_bg.png" alt="">
                     <p class="p_hoverSectionThree">
@@ -227,10 +230,71 @@
         </section>
         
         
+        <section class="wrapper_SectionFour">
+            <div class="wrap_sectionFour_slider">
+                <div class="owl-carousel">
+                    <img src="../app/img/section4_bg.png" alt="">
+                </div>
+            </div>
+            
+            <div class="wrap_sectionFour_ItemTwo">
+                <div class="parag_secFour">
+                   
+                    <p class="p_bold">
+                        Даем 2 года гарантии <br> на нашу мебель
+                    </p>
+                    <p class="p_book">Потому что уверены в её качестве</p>
+                    
+                </div>
+                
+                <div class="border_sectionFour">
+                       
+                    <div class="wrap_borderSecFour">
+                       
+                        <p class="p_bold">Кнопка <br> предотвращает <br> открывание </p>
+                        <p class="p_book">Откидные кровати с
+                        пружинно-подъемным механизмом,
+                        фиксируются специальной
+                        кнопкой-защелкой. Она удерживает
+                        кровать в вертикальном положении.
+                       </p>
+                       
+                    </div>   
+                       
+                <div class="controls controlsSectionFour">
+                    <div class="arrow left__S__2" id="left">
+                        <a ><img src="img/arrow_left_bg.png" alt=""></a>
+                    </div>
+                        <div class="arrow right__S__2" id="right">                   
+                    <a ><img src="img/arrow_right_bg.png" alt=""></a>
+                        </div>
+                </div>
+                       
+                </div>
+            </div>
+            
+            
+        </section>
         
         
+        <section class="wrapper_SectionFive">
+            <div class="wrap_sectionFive wow fadeInUp" data-wow-duration=".9s">
+                <div class="wr_sec5_par">
+                    <p>Узнай обо всех преимуществах <br> нашей мебели за 2 минуты</p>
+                    <a href="#" class="link_call">Записаться на просмотр</a>
+                </div>
+            </div>
+            <div class="borderRadius_sec5">
+                <img src="../app/img/radius_sec5_bg.png" alt="" class="radius_sec5_bg wow fadeInUp" data-wow-duration=".9s">
+                <a class="playOrange_bg popup-youtube" href="https://www.youtube.com/watch?v=pUjfksveBaY"><img src="../app/img/playOrange_bg.png" alt=""></a>
+            </div>
+        </section>
         
-        
+        <section class="wrapper_SectioSix">
+            <p class="p_bold">
+                Мебель-трансформен <br> сделает ваш дом просторнее
+            </p>
+        </section>
         
         
         
@@ -251,6 +315,7 @@
     
     <script src="../app/js/common.js"></script>
     <script src="../app/libs/owl.carousel.min.js"></script>
+    <script src="../app/libs/Magnific-Popup/jquery.magnific-popup.min.js"></script>
     <script src="../app/libs/jQuery.mmenu-master/dist/jquery.mmenu.all.js"></script>
     <script src="../app/libs/WOW-master/dist/wow.js"></script>
     

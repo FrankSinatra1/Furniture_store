@@ -1,7 +1,12 @@
 $(document).ready(function() {
     $('#my-menu').mmenu({
+        extensions: [
+            'pagedim-black'],
         navbar: {
             title: '<img src="img/logo_bg.png">'
+        },
+        offCanvas: {
+            position : "left"
         }
     });
 });
@@ -10,6 +15,8 @@ $(document).ready(function(){
   let owl = $(".owl-carousel"),
       url = null,
       bgDrop = $(".bg-drop"),
+      prev2 = $(".left__S__2"),
+      next2 = $(".right__S__2"),
       prev = $("#left"),
       next = $("#right");
 
@@ -33,4 +40,30 @@ $(document).ready(function(){
   prev.on("click", ()=>{
     owl.trigger("prev.owl.carousel");
   })
+    
+    next2.on("click", ()=>{
+    owl.trigger("next.owl.carousel");
+  });
+  prev2.on("click", ()=>{
+    owl.trigger("prev.owl.carousel");
+  })
 })
+
+
+$(document).ready(function() {
+	$('.popup-youtube').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+
+
+
+
+
+
