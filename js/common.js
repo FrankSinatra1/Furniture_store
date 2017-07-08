@@ -66,8 +66,9 @@ $(document).ready(function() {
 
 
 $(document).ready(function(){
-  $(".p_hoverSectionThreeNone").click(function(){
-    $(this).toggleClass("p_hoverSectionThree");
+  $(".see_allLink").click(function(){
+    $(this).toggleClass("see_allLink_Test");
+      $(".see_allLink_Test").removeClass("see_allLink");
   });
 });
 

@@ -126,7 +126,6 @@ a {
     padding: 9px 20px 11px;
     background: linear-gradient(to top, #feb92e, #f9a756);
     border-radius: 35px;
-    transition: .2s;
 }
 
 .link_call:focus {
@@ -729,6 +728,15 @@ button {
     font-family: GillSansNovaSemiBold;
     color: #000;
     border-bottom: solid;
+}
+
+.see_allLink:before {
+    content: 'Показать полностью';
+}
+
+.see_allLink_Test:before {
+    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur culpa, repudiandae voluptates beatae ipsum ipsam cum ullam animi nostrum distinctio quae, accusamus minima aut nemo? Dolorum iure, optio. Culpa.';
+    font-family: GillSansNovaBook;
     font-size: .9em;
 }
 
