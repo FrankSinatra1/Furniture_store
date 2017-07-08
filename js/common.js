@@ -22,6 +22,7 @@ $(document).ready(function(){
 
   owl.owlCarousel({
     loop: true,
+    stagePadding: 150,
     autoWidth: true,
     dots: true,
     smartSpeed: 700,
@@ -62,6 +63,13 @@ $(document).ready(function() {
 	});
 });
 
+
+
+$(document).ready(function(){
+  $(".p_hoverSectionThreeNone").click(function(){
+    $(this).toggleClass("p_hoverSectionThree");
+  });
+});
 
 
 
