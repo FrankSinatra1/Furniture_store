@@ -1,4 +1,4 @@
-body,html{margin:0}
+body,html{margin:0;height: 100%;}
 
 ul li{list-style-type:none;}
 
@@ -302,6 +302,16 @@ a {
     margin: auto;
 }
 
+.verticaleSection__Seven {
+    top: 5050px !important;
+}
+
+.verticaleSection__Seven_p {
+    left: -55px !important;
+    vertical-align: middle;
+    top: 30px !important;
+}
+
 .wrap_fromSectionTwo {
     display: -webkit-flex;
     display: -moz-flex;
@@ -406,13 +416,11 @@ button {
     background: linear-gradient(to top, #feb92e, #f9a756);
 }.span_p {
     font-family: GillSansNovaBold;
-    transform: rotate(-90deg);
     font-size: .8em;
-    display: inline-block;
-    position: absolute;
+    transform: rotate(-90deg);
+    right: 0;
     text-transform: uppercase;
-    right: -3px;
-    top: 13px;
+    position: absolute;
 }
 
 .verticaleTwo span {
@@ -420,17 +428,19 @@ button {
     top: 4100px;
 }
 .verticaleOne span{
-    top: 1110px;
+    top: 1100px;
     height: 130px;
 }.verticaleOne p {
     left: -55px;
     top: 68px;
+    vertical-align: top;
 }
 
 .verticaleThree span{
     top: 2050px;
     height: 80px;
 }.verticaleThree p {
+    position: absolute;
     left: -55px;
     top: 20px;
 }
@@ -664,11 +674,12 @@ button {
     display: -o-flex;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 81%;
+    align-items: flex-start;
+    width: 56%;
+    margin: auto;
     position: relative;
     top: 50%;
-    transform: translate(0, -50%)
+    transform: translate(0, -50%);
 }
 
 .radius_sec5_bg{
@@ -725,19 +736,8 @@ button {
     width: 150px;
     height: 150px;
 }.see_allLink{
-    font-family: GillSansNovaSemiBold;
     color: #000;
-    border-bottom: solid;
-}
-
-.see_allLink:before {
-    content: 'Показать полностью';
-}
-
-.see_allLink_Test:before {
-    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis pariatur culpa, repudiandae voluptates beatae ipsum ipsam cum ullam animi nostrum distinctio quae, accusamus minima aut nemo? Dolorum iure, optio. Culpa.';
-    font-family: GillSansNovaBook;
-    font-size: .9em;
+    border-bottom: dashed;
 }
 
 .itemSixsection__images button {
@@ -784,11 +784,137 @@ button {
     background-image: url(../img/item_twoCarouselSec6_bg.png);
 }
 
+.wrapper_SectionFour .owl-carousel .owl-nav.disabled {
+    position: absolute;
+    right: -10px;
+    bottom: -30px;
+}
+
+.wrap_slider .owl-carousel .owl-nav.disabled {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+}
+
+.owl-carousel .owl-nav.disabled {
+    background: #fff;
+    width: 250px;
+    height: 100px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: auto;
+}
+
+.owl-nav.disabled {
+    position: relative;
+}
+
+.owl-next:before {
+    content: '';
+    background-image: url(../img/arrow_right_bg.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    position: absolute;
+    width: 19px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}.owl-prev:before {
+    content: '';
+    background-image: url(../img/arrow_left_bg.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    position: absolute;
+    width: 19px;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.wrapper_SectioSeven {
+    margin-top: 10rem;
+    position: relative;
+    height: 100%;
+}
+
+.border_sectionSeven {
+    padding: 50px 150px;
+    border: 15px solid #f9a657;
+    height: 65%;
+    width: 30%;
+    margin-left: 5rem;
+}
+.border_sectionSeven .p_bold {
+}
+
+.border_sectionSeven hr {
+    width: 200px;
+    margin-left: 0;
+}
+.border_sectionSeven input {
+    width: 150px;
+    margin-left: 20px;
+}.border_sectionSeven label {
+    margin-left: 20px;
+}
+.border_sectionSeven .link_call{
+    width: 94%;
+    box-shadow: 1px 4px 15px rgba(0,0,0,.15);
+    margin-left: 0;
+}
+
+.border_sectionSeven form {
+    margin-top: 3rem;
+}
+
+.wrap_notebook__images img {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
 
 
+.wrapper_SectionFour .owl-dots {
+    width: 80rem;
+    position: absolute;
+    bottom: -200px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}.wrapper_SectionFour .owl-dot {
+    width: 13.5%;
+    border-bottom: dotted;
+    font-family: GillSansNovaBook;
+    transition: .3s;
+}.wrapper_SectionFour .owl-dot.active {
+    font-family: GillSansNovaBold;
+    transition: 2s;
+}
 
+.wrapper_SectionFour .owl-dots :first-child {
+    width: 14%;
+}.wrapper_SectionFour .owl-dots :nth-child(4) {
+    width: 15%;
+}
 
-
+.wrapper_SectionFour .owl-dots :first-child :before {
+    content: 'Пружинные механизмы из Италии';
+}
+.wrapper_SectionFour .owl-dots :nth-child(2) :before {
+    content: 'Кнопка - защелка для безопаснисти';
+}.wrapper_SectionFour .owl-dots :nth-child(3) :before {
+    content: 'Газлифты с ресурсом 100лет';
+}.wrapper_SectionFour .owl-dots :nth-child(4) :before {
+    content: 'Петли с доводчиком в базовой комплектации';
+}.wrapper_SectionFour .owl-dots :nth-child(5) :before {
+    content: 'Эстетичность - скрытая фурнитура';
+}
 
 
 

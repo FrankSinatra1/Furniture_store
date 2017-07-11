@@ -11,45 +11,22 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function(){
-  let owl = $(".owl-carousel"),
-      url = null,
-      bgDrop = $(".bg-drop"),
-      prev2 = $(".left__S__2"),
-      next2 = $(".right__S__2"),
-      prev = $("#left"),
-      next = $("#right");
 
-  owl.owlCarousel({
-    loop: true,
-    stagePadding: 150,
-    autoWidth: true,
-    dots: true,
-    smartSpeed: 700,
-  });
-  owl.on("changed.owl.carousel", function(){
-    setTimeout(() => {
-      let centerImg = owl.find(".center").find("div"),
-          url = centerImg.css('background-image');
-      bgDrop.css('background-image', url);
-    }, 20)
-  });
-
-  next.on("click", ()=>{
-    owl.trigger("next.owl.carousel");
-  });
-  prev.on("click", ()=>{
-    owl.trigger("prev.owl.carousel");
-  })
+jQuery(document).ready(function($) {
+	$('.owl-carousel').owlCarousel({
+		nav:true,
+        loop: true,
+        autoWidth: true,
+        smartSpeed: 700,
+        dotsSpeed: 700,
+        callbacks: true,
+	});
     
-    next2.on("click", ()=>{
-    owl.trigger("next.owl.carousel");
-  });
-  prev2.on("click", ()=>{
-    owl.trigger("prev.owl.carousel");
-  })
-})
-
+    owl.on('translated.owl.carousel', function(event) {
+    $('.currentPosition').text( event.item.index );
+    });
+    
+});
 
 $(document).ready(function() {
 	$('.popup-youtube').magnificPopup({
@@ -58,20 +35,19 @@ $(document).ready(function() {
 		mainClass: 'mfp-fade',
 		removalDelay: 160,
 		preloader: false,
-
+        
 		fixedContentPos: false
 	});
 });
 
 
 
-$(document).ready(function(){
-  $(".see_allLink").click(function(){
-    $(this).toggleClass("see_allLink_Test");
-      $(".see_allLink_Test").removeClass("see_allLink");
-  });
-});
-
+//$(document).ready(function(){
+//  $(".see_allLink").click(function(){
+//    $(this).toggleClass("see_allLink_Test");
+//      $(".see_allLink_Test").removeClass("see_allLink");
+//  });
+//});
 
 
 
