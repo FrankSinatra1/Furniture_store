@@ -75,7 +75,7 @@ a {
 }.verticaleOne div:nth-child(3) {
     top: 8900px;
 }.verticaleOne div:nth-child(4) {
-    top: 4200px;
+    top: 10930px;
     height: 70px;
 }
 
@@ -104,8 +104,10 @@ a {
 }.verticaleTwo div:nth-child(4) {
     top: 7600px;
     height: 70px;
+}.verticaleTwo div:nth-child(5) {
+    top: 9990px;
+    height: 70px;
 }
-
 
 .verticaleThree div:nth-child(1) {
     top: 2045px;
@@ -252,7 +254,7 @@ a {
     font-size: .9em;
     letter-spacing: .3px;
     padding: 9px 20px 11px;
-    background: linear-gradient(to top, rgba(254, 185, 46, 0.9), rgba(249, 167, 86, 0.91));
+    background: linear-gradient(to top, rgba(254, 185, 46, 1), rgba(249, 167, 86, 1));
     border-radius: 35px;
 }
 
